@@ -1,0 +1,35 @@
+{
+	"name": "Jira notification manager",
+	"version": "1.0.3",
+	"manifest_version": 2,
+	"minimum_chrome_version": "23",
+	"description": "Jira notification for new tasks",
+	"icons": {
+		"32": "logo32.png",
+		"128": "logo128.png"
+	},
+	"background": {
+		"scripts": ["jquery-3.3.1.min.js", "notificator.js", "sw.js", "options.js", "bootstrap.min.js", "popper.min.js", "jquery.min.js"]
+	},
+	"browser_action": {
+		"default_title": "Jira Popup manager",
+		"default_icon": "logo32.png"
+	},
+	"web_accessible_resources": [
+		"logo128.png",
+		"logo32.png",
+		"*.js",
+		"options.html",
+		"/bootstrap/js/bootstrap.min.js"
+	],
+	"options_page": "options.html",
+	"offline_enabled": true,
+	"update_url": "ftp://ftp.550550.ru/FC/jiraPopup.crx",
+	"permissions": [
+		"alarms",
+		"tabs",
+		"storage",
+		"notifications",
+		"<all_urls>"
+	]
+}

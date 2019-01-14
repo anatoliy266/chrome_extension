@@ -1,0 +1,50 @@
+.full {
+	height: 100%;
+}
+
+.logo {
+	min-width: 150px;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.logo-img {
+	width: 120px;
+	height: 80px;
+}
+
+.header {
+	height: 10%;
+}
+
+.footer {
+	height: 5%;
+	text-align: center;
+}
+
+.general {
+	height: 85%;
+}
+
+.colored {
+	background: #C2C1C1;
+	border-color: white;
+	border-width: 6px;
+	border-style: inset;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.static-min-width {
+	min-width: 400px;
+}
+
+.horizontal-center-anchor {
+	text-align: center;
+}
+
+.half-width {
+	width: 50%;
+}
