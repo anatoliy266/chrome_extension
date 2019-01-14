@@ -291,6 +291,7 @@ navigator.serviceWorker.addEventListener('message', function(event) {
 			for (var j = 0; j < tabsList.length; j++) {
 				//console.log(tabsList[j].url);
 				if (tabsList[j].url == url) {
+					chrome.tabs.reload(tabsList[j].id);
 					return chrome.tabs.update(tabsList[j].id, {active: true});
 				}
 			}
