@@ -1,6 +1,6 @@
 {
 	"name": "Jira notification manager",
-	"version": "1.0.3",
+	"version": "1.0.8",
 	"manifest_version": 2,
 	"minimum_chrome_version": "23",
 	"description": "Jira notification for new tasks",
@@ -17,19 +17,28 @@
 	},
 	"web_accessible_resources": [
 		"logo128.png",
+		"phone-square-solid.svg",
 		"logo32.png",
+		"settings.png",
+		"icon32.png",
+		"dial.png",
 		"*.js",
 		"options.html",
 		"/bootstrap/js/bootstrap.min.js"
 	],
 	"options_page": "options.html",
 	"offline_enabled": true,
-	"update_url": "ftp://ftp.550550.ru/FC/jiraPopup.crx",
 	"permissions": [
 		"alarms",
 		"tabs",
 		"storage",
 		"notifications",
-		"<all_urls>"
+		"cookies",
+		"activeTab",
+		"webRequest", 
+		"webRequestBlocking"
+	],
+	"optional_permissions": [
+		"*://*/*"
 	]
 }

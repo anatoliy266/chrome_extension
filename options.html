@@ -27,27 +27,97 @@
 				<div class="col align-self-center">
 					<div class="container-fluid full">
 						<ul class="nav nav-tabs">
-							<!--<li class="nav-item" id="authTabItem">
-								<a class="nav-link active" id="authTab" data-toggle="tab" href="#auth" role="tab" aria-controls="auth" aria-selected="true">Active</a>
-							</li>-->
 							<li class="nav-item" id="filtersTabItem">
 								<a class="nav-link active" id="filtersTab" data-toggle="tab" href="#filters" role="tab" aria-controls="filters" aria-selected="false">Link</a>
 							</li>
 						</ul>
 						<div class="tab-content static-min-width" id="myTabContent">
-							<!--<div class="tab-pane fade show active" id="auth" role="tabpanel" aria-labelledby="auth-tab">
-								<div class="container-fluid full horizontal-center-anchor">
-									<h1>Login</h1>
-									<input class="from-control horizontal-center-anchor half-width" id="loginInput" type="text" placeholder="login">
-									<h1>Password</h1>
-									<input class="from-control horizontal-center-anchor half-width" id="pwdInput" type="text" placeholder="password">
-									<p></p>
-									<button class="btn btn-default" id="confirmButton">Confirm</button>
-								</div>
-							</div>-->
 							<div class="tab-pane fade show active" id="filters" role="tabpanel" aria-labelledby="filters-tab">
-								<div class="container-fluid full">
-									
+								<div class="container-fluid full" id="optionsSpace">
+									<div class="container-fluid bordered">
+										<div class="container-fluid" id="serverSpace">
+											<p>server address</p>
+											<div class="input-group mb-3">
+												<div class="input-group-prepend">
+													<span class="input-group-text" id="basic-addon1">https://</span>
+												</div>
+												<input type="text" class="form-control" placeholder="server address" aria-label="server address" aria-describedby="basic-addon2" id="serverInputSpace">
+												<div class="input-group-append">
+													<button class="btn-acess" id="accessBtn">Check</button>
+												</div>
+											</div>
+											<div class="container-fluid" id="acessArea">
+												<div class="container-fluid horizontal-center-anchor" id="acessAreaIndicator">
+													
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container-fluid bordered" id="filtersCont">
+										<div class="container-fluid">
+											<p>Фильтр</p>
+										</div>
+										<div class="row" id="standardFilters">
+											<div class="col">
+											<p>Проект</p>
+											<div class="dropdown">
+												<button class="btn btn-secondary dropdown-toggle static-dropdown-width" type="button" id="projectMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<p>Выберите проект</p>
+												</button>
+												<div class="dropdown-menu scrollable" aria-labelledby="dropdownMenuButton" id="projectMenuItemsArea">
+													<a class="dropdown-item" id="defaultProject">Все</a>
+													<div class="dropdown-divider"></div>
+												</div>
+											</div>
+											</div>
+											<div class="col">
+												<p>Пользователь</p>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle static-dropdown-width" type="button" id="userMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<p>Выберите пользователя</p>
+													</button>
+													<div class="dropdown-menu scrollable" aria-labelledby="dropdownMenuButton" id="userMenuItemsArea">
+														<a class="dropdown-item" id="defaultUser">Текущий пользователь</a>
+														<div class="dropdown-divider"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<p>статус</p>
+												<div class="dropdown">
+													<button class="btn btn-secondary dropdown-toggle static-dropdown-width" type="button" id="statusMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<p>Статус</p>
+													</button>
+													<div class="dropdown-menu scrollable" aria-labelledby="dropdownMenuButton" id="statusMenuItemsArea">
+														<a class="dropdown-item" id="defaultStatus">Все</a>
+														<div class="dropdown-divider"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row hidden" id="advancedFilters">
+											<div class="container-fluid">
+												<div class="input-group mb-3">
+													<div class="input-group-prepend">
+														<span class="input-group-text" id="basic-addon1">jql=</span>
+													</div>
+													<input type="text" class="form-control" placeholder="text" aria-label="server address" aria-describedby="basic-addon2" id="containsText">
+												</div>
+											</div>
+										</div>
+										<p class="spaser"> </p>
+										<div class="container-fluid">
+											<div class="row justify-content-end" id="filtersBtnSpace">
+												<div class="col-2 horizontal-center-anchor">
+													<button class="btn full-width" id="advansedFiltersBtn" hiddenVal="standard">Advanced</button>
+												</div>
+												<div class="col-2 horizontal-center-anchor">
+													<button class="btn full-width" id="confirmFiltersBtn">Confirm</button>
+												</div>
+											</div>
+											<p class="spaser" id="confirmSpaser"><br></p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -48,3 +48,37 @@
 .half-width {
 	width: 50%;
 }
+
+.full-width {
+	width: 100%;
+}
+
+.spaser {
+	height: 10px;
+}
+
+.bordered {
+	border-width: 1px;
+	border-color: black;
+	border-style: inset;
+}
+
+.static-dropdown-width {
+	width: 200px;
+	min-width: 200px;
+	max-width:200px;
+}
+
+.scrollable {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.align-right {
+	text-align: right;
+}
+
+#optionsSpace {
+	min-width: 800px;
+	max-width: 800px;
+}
